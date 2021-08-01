@@ -2,7 +2,7 @@
 > https://yi9avds2m3.execute-api.us-east-1.amazonaws.com/latest/dynasors
 
 ## GET
-> https://yi9avds2m3.execute-api.us-east-1.amazonaws.com/latest/dynasors/f7442a0e-b14a-4afd-bb08-900d441ed3ba
+> https://yi9avds2m3.execute-api.us-east-1.amazonaws.com/latest/dynasors/acc55da4-0969-4739-858c-ac1ec0fdd58b
 
 ## POST
 > https://yi9avds2m3.execute-api.us-east-1.amazonaws.com/latest/dynasors
@@ -18,7 +18,7 @@
 }
 
 ## PUT
-> https://yi9avds2m3.execute-api.us-east-1.amazonaws.com/latest/dynasors/f7442a0e-b14a-4afd-bb08-900d441ed3ba
+> https://yi9avds2m3.execute-api.us-east-1.amazonaws.com/latest/dynasors/acc55da4-0969-4739-858c-ac1ec0fdd58b
 
 ###### HEADERS: content-type/application/json
 ###### BODY
@@ -31,4 +31,7 @@
 }
 
 ## DELETE
-> https://yi9avds2m3.execute-api.us-east-1.amazonaws.com/latest/dynasors/f7442a0e-b14a-4afd-bb08-900d441ed3ba
+> https://yi9avds2m3.execute-api.us-east-1.amazonaws.com/latest/dynasors/acc55da4-0969-4739-858c-ac1ec0fdd58b
+
+
+##### PLEASE USE POSTMAN

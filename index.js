@@ -8,7 +8,7 @@ var ApiBuilder = require('claudia-api-builder'),
 
     module.exports = api;
 
-//! INSERT
+//! POST
     api.post('/dynasors', function (request) {
         var params = {
           TableName: 'dynasorDb',
@@ -27,11 +27,7 @@ var ApiBuilder = require('claudia-api-builder'),
         return dynamoDb.put(params).promise();
       }, { success: 201, message: 'Success'});
       
-  
-      api.get('/dynasors', function (request) { // GET all users
-        return dynamoDb.scan({ TableName: 'dynasorDb' }).promise()
-            .then(response => response.Items)
-      });
+
 
 
 //! GET / FETCH ITEM
