@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "claudiasor-executor",
+    "name": "claudiasor",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "yi9avds2m3",
+    "module": "index"
+  }
+}
