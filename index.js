@@ -95,3 +95,41 @@ var ApiBuilder = require('claudia-api-builder'),
 
 
     
+    api.get('/dynaSpecies/{id}', function (request) {
+      var id, params;
+    
+      id = decodeURI(request.pathParams.id);
+      params = {
+        TableName: 'dynasorDb',
+        KeyConditionExpression: 'id = :sp',
+        ExpressionAttributeValues: {
+                    ':sp' : id
+                  }
+      };
+      return dynamoDb.query(params).promise()
+      .then(response => response.Items)
+      
+    });
+  
+
+
+  // api.get('/dynaSpecies/{id}', function (request) {
+
+  //   var id, params;
+    
+  //   id = decodeURI(request.pathParams.id);
+  
+  //   params = {
+  //         TableName: 'dynasorDb',
+  //         KeyConditionExpression: 'species = :sp',
+  //         ExpressionAttributeValues: {
+  //           ':sp' : id
+  //         }
+  //   };
+  
+  //   return dynamoDb.scan(params).promise()
+  //     .then(function (response) {
+  //     return response.Item;
+  //   });
+  // }, { success: 201, message: 'Success'});
+
